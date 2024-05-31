@@ -14,7 +14,7 @@ const AddPost = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the form submission, e.g., send the data to a server
+    // Handle form submission, e.g., send data to a server
     console.log("Title:", title);
     console.log("Content:", content);
     console.log("Image:", image);

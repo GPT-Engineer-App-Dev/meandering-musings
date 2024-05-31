@@ -10,8 +10,6 @@ const Index = () => {
           <Image src="/images/blog-image.jpg" alt="Blog Image" borderRadius="md" />
         </Box>
         <Link href="/about" color="teal.500" fontSize="lg">Learn more about me</Link>
-      </VStack>
-      <VStack spacing={4}>
         <Link href="/add-post" color="teal.500" fontSize="lg">Add a new post</Link>
       </VStack>
     </Container>

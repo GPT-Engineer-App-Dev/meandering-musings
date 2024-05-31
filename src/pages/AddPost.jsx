@@ -14,10 +14,10 @@ const AddPost = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to a server
-    console.log("Title:", title);
-    console.log("Content:", content);
-    console.log("Image:", image);
+    const newPost = { title, content, image };
+    const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
+    storedPosts.push(newPost);
+    localStorage.setItem("posts", JSON.stringify(storedPosts));
     navigate("/");
   };
 
